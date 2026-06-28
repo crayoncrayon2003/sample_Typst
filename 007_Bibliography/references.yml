@@ -1,0 +1,78 @@
+# Hayagriva 形式の文献データベース（Typst 独自フォーマット）
+# 文献の種類(type): book, article, proceedings, web, thesis, report など
+
+# -----------------------------------------------------------------------
+# book: 書籍
+# -----------------------------------------------------------------------
+knuth1984:
+  type: book
+  title: The TeXbook
+  author: Knuth, Donald E.
+  date: 1984
+  publisher: Addison-Wesley
+  location: "Reading, MA"
+  serial-number:
+    volume: A
+
+lamport1994:
+  type: book
+  title: "LaTeX: A Document Preparation System"
+  author: Lamport, Leslie
+  date: 1994
+  edition: 2
+  publisher: Addison-Wesley
+  location: "Reading, MA"
+
+goossens1993:
+  type: book
+  title: The LaTeX Companion
+  author:
+    - Goossens, Michel
+    - Mittelbach, Frank
+    - Samarin, Alexander
+  date: 1993
+  publisher: Addison-Wesley
+  location: "Reading, MA"
+
+# -----------------------------------------------------------------------
+# article: 学術論文
+# -----------------------------------------------------------------------
+einstein1905:
+  type: article
+  title: Zur Elektrodynamik bewegter Körper
+  author: Einstein, Albert
+  date: 1905
+  parent:
+    type: periodical
+    title: Annalen der Physik
+    volume: 322
+    issue: 10
+  page-range: 891-921
+  serial-number:
+    doi: "10.1002/andp.19053221004"
+
+# -----------------------------------------------------------------------
+# proceedings: 国際会議論文
+# -----------------------------------------------------------------------
+sample2023:
+  type: article
+  title: A Sample Conference Paper
+  author:
+    - Yamada, Taro
+    - Suzuki, Hanako
+  date: 2023
+  page-range: 123-130
+  parent:
+    type: proceedings
+    title: Proceedings of the Sample International Conference
+    location: "Tokyo, Japan"
+
+# -----------------------------------------------------------------------
+# web: ウェブページ
+# -----------------------------------------------------------------------
+typstproject:
+  type: web
+  title: Typst Documentation
+  author: The Typst Project
+  date: 2024
+  url: https://typst.app/docs/

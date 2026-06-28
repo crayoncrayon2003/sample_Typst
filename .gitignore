@@ -1,0 +1,6 @@
+# Typst のコンパイル生成物
+*.pdf
+
+# エディタ・OS
+.DS_Store
+*.swp
